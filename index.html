@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<title>Поездка на конференцию</title>
+</head>
+<body>
+	<div class="chat">
+		<!-- 1. ШАПКА мин высота 50px (может растягиваться до 100px если добавить больше контента) -->
+		<header class="chat__header">
+			<!-- Разметка для демо -->
+			<div class="chat__settings">
+				<button class="chat__button chat__button--settings" aria-label="Настройки"></button>
+				<button class="chat__button chat__button--user" aria-label="Добавить пользователя"></button>
+			</div>
+			<div class="chat__info">
+				<div class="chat__details">
+					<h1 class="chat__title">Поездка на конференцию</h1>
+					<p class="chat__description">25 участников</p>
+				</div>
+				<div class="chat__controls">
+					<button class="chat__button chat__button--search" aria-label="Поиск"></button>
+					<button class="chat__button chat__button--menu" aria-label="Меню"></button>
+				</div>
+			</div>
+		</header>
+		<div class="chat__main">
+			<!-- 2. БОКОВАЯ ПАНЕЛЬ(Список юзеров) фикс ширина 200px -->
+			<aside class="chat__sidebar">
+				<!-- Тут просто контент, добавленный для прокрутки (Участники) -->
+				<h2 class="chat__sidebar-title">Участники</h2>
+				<ul class="chat__participants">
+					<li class="chat__participant">Даша</li>
+					<li class="chat__participant">Андрей</li>
+					<li class="chat__participant">Nastya</li>
+					<li class="chat__participant">Дмитрий</li>
+					<li class="chat__participant">Алексей</li>
+					<li class="chat__participant">Lena Anisimova</li>
+					<li class="chat__participant">Света</li>
+					<li class="chat__participant">Ирина</li>
+					<li class="chat__participant">Anastasia</li>
+					<li class="chat__participant">Павел</li>
+					<li class="chat__participant">Ира</li>
+					<li class="chat__participant">Сергей</li>
+					<li class="chat__participant">Игорь</li>
+					<li class="chat__participant">Таня</li>
+					<li class="chat__participant">Irina</li>
+					<li class="chat__participant">Анна</li>
+					<li class="chat__participant">Татьяна Иванова</li>
+					<li class="chat__participant">Артем</li>
+					<li class="chat__participant">Дима К.</li>
+					<li class="chat__participant">Наташа</li>
+					<li class="chat__participant">Илья</li>
+					<li class="chat__participant">Marina</li>
+					<li class="chat__participant">Соня</li>
+					<li class="chat__participant">Карина</li>
+					<li class="chat__participant">Gleb</li>
+				</ul>
+			</aside>
+			<!-- 3. ОКНО ЧАТА занимает оставшееся пространство в ширину -->
+			<div class="chat__messages">
+				<!-- Тут просто контент, добавленный для демо прокрутки (Сообщения) -->
+				<div class="chat__messages-block">
+					<div class="chat__system-message chat__system-message--date">
+						<p>2 ноября</p>
+					</div>
+					<div class="chat__system-message">
+						<p>Андрей создал беседу “Поездка на конференцию”</p>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/image_1.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Андрей</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">всем привет! создал чат</p>
+								<p class="chat__message-time">23:25</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">добавьте, если кого забыл</p>
+								<p class="chat__message-time">23:26</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/no_image.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Даша</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">привет, спасибо!</p>
+								<p class="chat__message-time">23:27</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/no_image.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Дмитрий</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">всем привет</p>
+								<p class="chat__message-time">23:34</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/image_2.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Мария</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">привет!</p>
+								<p class="chat__message-time">23:55</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">Настю забыли</p>
+								<p class="chat__message-time">23:57</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chat__messages-block">
+					<div class="chat__system-message chat__system-message--date">
+						<p>3 ноября</p>
+					</div>
+					<div class="chat__system-message">
+						<p>Мария добавила Nastya</p>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/no_image.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Nastya</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">всем привет!!</p>
+								<p class="chat__message-time">00:04</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/no_image.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Алексей</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">ребята, привет</p>
+								<p class="chat__message-time">00:21</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">давайте обсудим подробности</p>
+								<p class="chat__message-time">00:21</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text"><span class="chat__message-tag">@lena</span> ты узнала какой в итоге
+									лимит?</p>
+								<p class="chat__message-time">00:22</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/image_3.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Lena Anisimova</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">Да</p>
+								<p class="chat__message-time">00:24</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">Привет</p>
+								<p class="chat__message-time">00:24</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">Сказали максимум 26 человек</p>
+								<p class="chat__message-time">00:25</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message">
+						<div style="background-image: url(images/no_image.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Алексей</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">тогда вроде укладываемся?</p>
+								<p class="chat__message-time">00:26</p>
+							</div>
+							<div class="chat__message-container">
+								<p class="chat__message-text">кто-то еще едет?</p>
+								<p class="chat__message-time">00:27</p>
+							</div>
+						</div>
+					</div>
+					<div class="chat__message" id="latest-message">
+						<div style="background-image: url(images/image_3.jpg)" class="chat__user-avatar">
+						</div>
+						<div class="chat__messages-container">
+							<p class="chat__user-name">Lena Anisimova</p>
+							<div class="chat__message-container">
+								<p class="chat__message-text">Вроде все здесь</p>
+								<p class="chat__message-time">00:31</p>
+							</div>
+						</div>
+					</div>
+					<a href="#latest-message" class="chat__scroll-down"><span class="chat__scroll-number">5</span><span
+							class="chat__scroll-arrow"></span></a>
+						<div class="chat__system-message">
+							<p>Непрочитанные сообщения</p>
+						</div>
+						<div class="chat__message">
+							<div style="background-image: url(images/image_3.jpg)" class="chat__user-avatar">
+							</div>
+							<div class="chat__messages-container">
+								<p class="chat__user-name">Lena Anisimova</p>
+								<div class="chat__message-container">
+									<p class="chat__message-text">Вот кстати фотки с прошлой конференции)</p>
+									<p class="chat__message-time">00:41</p>
+								</div>
+								<div class="chat__message-container">
+									<div class="chat__message-image">
+										<img src="images/conf_1.jpg">
+									</div>
+									<p class="chat__message-time">00:42</p>
+								</div>
+								<div class="chat__message-container">
+									<div class="chat__message-image">
+										<img src="images/conf_2.jpg">
+									</div>
+									<p class="chat__message-time">00:42</p>
+								</div>
+								<div class="chat__message-container">
+									<div class="chat__message-image">
+										<img src="images/conf_3.jpg">
+									</div>
+									<p class="chat__message-time">00:43</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat__message">
+							<div style="background-image: url(images/image_2.jpg)" class="chat__user-avatar">
+							</div>
+							<div class="chat__messages-container">
+								<p class="chat__user-name">Мария</p>
+								<div class="chat__message-container">
+									<p class="chat__message-text">оо выглядит круто!</p>
+									<p class="chat__message-time">00:49</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- 4. ПОДВАЛ мин высота 100px (может растягиваться до 200px если добавить больше контента) -->
+		<footer class="chat__footer">
+			<textarea class="chat__input" placeholder="Введите сообщение"></textarea>
+		</footer>
+	</div>
+</body>
+</html>
